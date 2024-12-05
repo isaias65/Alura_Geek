@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +7,17 @@
 }
 :root{
     --bg-primary: #5300C8;
+    --bg-second: #FFFFFF;
+
     --txt-title: #E5E5E5;
+    --txt-subtitle: #000000;
+
+    --txt-card: #FFFFFF;
+    --bt-card: #000000;
+    --bg-card: #5D04D9;
+
+    --bt-add: #03318C;
+    --txt-add: #FFFFFF;
 }
 .main-header{
     background-color: var(--bg-primary);
@@ -28,4 +39,157 @@
     font-family: "Press Start 2P", serif;
     font-style: normal;
     color: var(--txt-title);
+}
+.container-main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: self-start;
+    height: calc(100vh - 74px);
+    padding: 1rem;
+    gap: 3rem;
+    /* flex-wrap: wrap; */
+}
+.section-products{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 1.5rem 0;
+}
+.products-title{
+    font-size: 1.3rem;
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    text-align: center;
+    padding: 1.5rem 0;
+    color: var(--txt-subtitle);
+}
+.section-products .container-products{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.section-products .container-products .products{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 196px;
+    height: 258px;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    border: 3px solid var(--bt-card);
+}
+.section-products .container-products .products .products-img{
+    width: 176px;
+    height: 174px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 3px solid var(--bt-card);
+}
+.section-products .container-products .products .products-img img{
+    width: 100%;
+    height: 100%;
+}
+.section-products .container-products .products .products-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+.section-products .container-products .products .products-info .products-name{
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--txt-card);
+}
+.section-products .container-products .products .products-info .products-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-products .container-products .products .products-info .products-details .products-price{
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--txt-card);
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.section-add-products{
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    padding: 1.5rem 1.5rem;
+}
+.section-add-products .add-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+.add-name,
+.add-price,
+.add-url{
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 30px;
+    border: 3px solid var(--bt-add);
+    padding: 1rem;
+    color: var(--bt-add);
+}
+.add-name::placeholder,
+.add-price::placeholder,
+.add-url::placeholder{
+    color: var(--bt-add);
+}
+.add-name:focus,
+.add-price:focus,
+.add-url:focus{
+    border-color: var(--bg-card);
+    outline: none;
+}
+.section-add-products .add-form .add-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    width: 188px;
+    height: 55px;
+    border-radius: 15px;
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.section-add-products .add-form .add-button .add-submit{
+    background-color: var(--bt-add);
+    color: var(--txt-add);
+}
+.section-add-products .add-form .add-button .add-reset{
+    background-color: var(--bg-second);
+    border: 3px solid var(--bt-add);
+    color: var(--bt-add);
+}
+.section-add-products .add-form .add-button .add-submit:hover{
+    background-color: var(--bg-card);
+}
+.section-add-products .add-form .add-button .add-reset:hover{
+    background-color: var(--bg-card);
+    border: none;
+    color: var(--txt-add);
 }
