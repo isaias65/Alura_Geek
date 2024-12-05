@@ -45,10 +45,9 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: self-start;
-    height: calc(100vh - 74px);
+    min-height: calc(100vh - 74px);
     padding: 1rem;
-    gap: 3rem;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 .section-products{
     display: flex;
@@ -164,6 +163,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
 }
 .button{
     width: 188px;
@@ -201,6 +201,7 @@
     background-color: var(--bg-primary);
     padding: 2rem;
     gap: 1rem;
+    min-height: calc(100vh - 80vh);
 }
 .container-footer .footer-title{
     display: flex;
