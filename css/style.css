@@ -193,3 +193,26 @@
     border: none;
     color: var(--txt-add);
 }
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    padding: 2rem;
+    gap: 1rem;
+}
+.container-footer .footer-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.container-footer .footer-details{
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--txt-title);
+}
