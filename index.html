@@ -16,10 +16,10 @@
     <main class="container-main">
         <section class="section-add-products">
             <h2 class="products-title">AGREGAR PRODUCTO:</h2>
-            <form class="add-form">
-                <input type="text" class="add-name" placeholder="Nombre...">
-                <input type="number" class="add-price" placeholder="Precio..">
-                <input type="text" class="add-url" placeholder="URL de la imagen...">
+            <form class="add-form" data-form>
+                <input type="text" class="add-name" placeholder="Nombre..." required name="Nombre" id="Nombre" data-name>
+                <input type="number" class="add-price" placeholder="Precio.." required name="Precio" id="Precio" data-precio>
+                <input type="text" class="add-url" placeholder="URL de la imagen..." required name="url" id="url" data-url>
                 <div class="add-button">
                     <button type="submit" class="button add-submit">Enviar</button>
                     <button type="reset" class="button add-reset">Limpiar</button>
@@ -29,67 +29,7 @@
 
         <section class="section-products">
             <h2 class="products-title">MIS PRODUCTOS:</h2>
-            <div class="container-products">
-                <article class="products">
-                    <figure class="products-img">
-                        <img src="https://images.unsplash.com/photo-1732719812776-c043e861faf8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen del producto">
-                    </figure>
-                    <div class="products-info">
-                        <p class="products-name">Game Boy Classic</p>
-                        <div class="products-details">
-                            <p class="products-price"><span>$</span>60,00</p>
-                            <img src="./assets/icon_trash.svg" alt="icono de eliminar">
-                        </div>
-                    </div>
-                </article>
-                <article class="products">
-                    <figure class="products-img">
-                        <img src="https://cdn.motor1.com/images/mgl/erZ6K/s1/koenigsegg-jesko-absolut.webp" alt="imagen del producto">
-                    </figure>
-                    <div class="products-info">
-                        <p class="products-name">Stormtrooper</p>
-                        <div class="products-details">
-                            <p class="products-price"><span>$</span>60,00</p>
-                            <img src="./assets/icon_trash.svg" alt="icono de eliminar">
-                        </div>
-                    </div>
-                </article>
-                <article class="products">
-                    <figure class="products-img">
-                        <img src="https://cdn.motor1.com/images/mgl/erZ6K/s1/koenigsegg-jesko-absolut.webp" alt="imagen del producto">
-                    </figure>
-                    <div class="products-info">
-                        <p class="products-name">Stormtrooper</p>
-                        <div class="products-details">
-                            <p class="products-price"><span>$</span>60,00</p>
-                            <img src="./assets/icon_trash.svg" alt="icono de eliminar">
-                        </div>
-                    </div>
-                </article>
-                <article class="products">
-                    <figure class="products-img">
-                        <img src="https://cdn.motor1.com/images/mgl/erZ6K/s1/koenigsegg-jesko-absolut.webp" alt="imagen del producto">
-                    </figure>
-                    <div class="products-info">
-                        <p class="products-name">Stormtrooper</p>
-                        <div class="products-details">
-                            <p class="products-price"><span>$</span>60,00</p>
-                            <img src="./assets/icon_trash.svg" alt="icono de eliminar">
-                        </div>
-                    </div>
-                </article>
-                <article class="products">
-                    <figure class="products-img">
-                        <img src="https://cdn.motor1.com/images/mgl/erZ6K/s1/koenigsegg-jesko-absolut.webp" alt="imagen del producto">
-                    </figure>
-                    <div class="products-info">
-                        <p class="products-name">Stormtrooper</p>
-                        <div class="products-details">
-                            <p class="products-price"><span>$</span>60,00</p>
-                            <img src="./assets/icon_trash.svg" alt="icono de eliminar">
-                        </div>
-                    </div>
-                </article>
+            <div class="container-products" data-list>
             </div>
         </section>
     </main>
@@ -102,5 +42,9 @@
         </div>
         <p class="footer-details">&copy; 2024 - Desarrollado por Isaias Sandro</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/mostrarData.js" type="module"></script>
+    <script src="./js/crearData.js" type="module"></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Entornos y configuraciones locales
+.env
+.env.local
+.env.*.local
+.DS_Store
+.vscode/
+.idea/
+*.local
+
+# Sistemas operativos
+Thumbs.db
+desktop.ini
+
+# Archivos generados por compiladores/transpiladores
+dist/
+build/
+*.log
+*.out
+
+# Imágenes y recursos innecesarios
+*.png.cache
+*.tmp
+*.webp.cache
+
+# Archivos relacionados con editores
+*.swp
+*.swo
+*~
+*.bak
+
+# Sistemas de empaquetado
+*.zip
+*.tar.gz
+
+# Archivos específicos del proyecto web
+/assets/img/temp/

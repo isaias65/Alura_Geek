@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "74d8",
+      "titulo": "Super Mario",
+      "url": "https://i.ebayimg.com/images/g/CE8AAOSwh3lkhXhM/s-l1200.jpg",
+      "precio": "20"
+    },
+    {
+      "id": "6053",
+      "titulo": "Pokemon Eevee",
+      "url": "https://images.bigbadtoystore.com/images/p/full/2021/09/ab22968a-239b-4683-ae08-a64883e27591.jpg",
+      "precio": "50"
+    },
+    {
+      "id": "7ba3",
+      "titulo": "Pokemon Center",
+      "url": "https://images.bigbadtoystore.com/images/p/full/2021/09/62c2b5d1-e0a6-41bc-844e-143b8b4081a2.jpg",
+      "precio": "70"
+    },
+    {
+      "id": "7725",
+      "titulo": "Pokemon Pikachu",
+      "url": "https://www.toysruschina.com/dw/image/v2/BDGJ_PRD/on/demandware.static/-/Sites-master-catalog-toysrus/default/dwc9e0a54b/c/5/c/e/c5ce0f171819ce4806f05f30d064846afbaca163_95661_ei1_zh_CN.jpg?sw=500&sh=500&q=75",
+      "precio": "15"
+    }
+  ]
+}

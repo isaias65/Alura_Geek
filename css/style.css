@@ -19,6 +19,11 @@
     --bt-add: #03318C;
     --txt-add: #FFFFFF;
 }
+.mensaje{
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    color: var(--bg-card);
+}
 .main-header{
     background-color: var(--bg-primary);
     display: flex;
@@ -123,6 +128,9 @@
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
+}
+.section-products .container-products .products .products-info .products-details .products-icon-eliminar{
+    cursor: pointer;
 }
 .section-add-products{
     display: flex;
