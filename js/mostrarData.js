@@ -21,11 +21,34 @@ export default function construyeCard(id, titulo, url, precio) {
     `;
 
     const eliminarIcon = card.querySelector(".products-icon-eliminar");
+
     eliminarIcon.addEventListener("click", (event) => {
         event.preventDefault();
-        conexion.eliminarData(id);
-    }
-    );
+
+        Swal.fire({
+            title: "¿Estás seguro?",
+            text: "Esto eliminará el producto de forma permanente.",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Sí, eliminar",
+            cancelButtonText: "Cancelar",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                conexion
+                    .eliminarData(id)
+                    .then(() => {
+                        card.remove();
+                    })
+                    .catch((error) => {
+                        console.error("Error al eliminar el producto:", error);
+                        Swal.fire("Error", "No se pudo eliminar el producto. Inténtalo de nuevo.", "error");
+                    });
+            }
+        });
+    });
+
 
     return card;
 }
