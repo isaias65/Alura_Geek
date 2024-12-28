@@ -29,7 +29,7 @@ El proyecto consiste en una aplicación web interactiva que permite a los usuari
 
 1. **Clona el repositorio**:  
    ```bash
-   git clone https://github.com/tu-usuario/challenge-alura.git
+   git clone https://github.com/isaias65/Alura_Geek.git
 2. **Instala las dependencias**: 
     ```bash
     npm install
